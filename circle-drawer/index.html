@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Drawer</title>
+  </head>
+  <style>
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <div class="row">
+      <button id="undo">Undo</button>
+      <button id="redo">Redo</button>
+    </div>
+    <div class="row" style="margin-top: 10px">
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </div>
+    <dialog id="popup">
+      <div>
+        Adjust diameter of crcle at <span id="coordinates">(107, 39)</span>.
+      </div>
+      <input type="range" id="slider" />
+      <form method="dialog">
+        <button type="submit">Close</button>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>

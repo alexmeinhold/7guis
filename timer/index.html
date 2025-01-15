@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="column">
+      <label for="progress">Elapsed time:</label>
+      <progress id="progress" min="0" max="30" value="0"></progress>
+      <div id="time">0s</div>
+      <label for="duration">Duration:</label>
+      <input type="range" id="duration" min="0" max="30" value="10" />
+      <button id="reset">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
